@@ -1,0 +1,14 @@
+PokemonsBattles:MainSecond.o Pokemon.o BattleByCategory.o MaxHeap.o LinkedList.o
+	gcc MainSecond.o Pokemon.o BattleByCategory.o MaxHeap.o LinkedList.o -o PokemonsBattles
+Pokemon.o:Pokemon.c Pokemon.h Defs.h
+	gcc -c Pokemon.c
+MaxHeap.o:MaxHeap.c MaxHeap.h Pokemon.h Defs.h 
+	gcc -c MaxHeap.c
+LinkedList.o:LinkedList.c LinkedList.h MaxHeap.h Defs.h
+	gcc -c LinkedList.c
+BattleByCategory.o:LinkedList.h Defs.h MaxHeap.h
+	gcc -c BattleByCategory.c
+MainSecond.o:MainSecond.c BattleByCategory.h LinkedList.h MaxHeap.h Defs.h
+	gcc -c MainSecond.c
+clean:
+	rm -f *.o
