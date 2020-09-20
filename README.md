@@ -1,5 +1,5 @@
 # Pokemon Battle Simulator
-* This Maze App was build as a part of Advanced Programming Course, taken in Ben Gurion University, Information System Engineering Faculty.
+* This Simulator was build as a part of Advanced Programming Course, taken in Ben Gurion University, Information System Engineering Faculty.
 * The Program was bult in C and focuses on clean code and handling with memory leaks
 
 ## Project Includes
